@@ -1,0 +1,418 @@
+
+*{
+    margin: 0%;
+}
+
+body{
+     height: 100%;    
+background-image: linear-gradient(117deg, rgba(158,99,225, 0.5) 0%,
+ rgba(158,99,225, 0.5) 14.286%,rgba(156,93,222, 0.5) 14.286%,
+  rgba(156,93,222, 0.5) 28.572%,rgba(142,87,218, 0.5) 28.572%,
+   rgba(142,87,218, 0.5) 42.858%,rgba(166,81,215, 0.5) 42.858%, 
+   rgba(166,81,215, 0.5) 57.144%,rgba(163,74,211, 0.5) 57.144%, 
+   rgba(163,74,211, 0.5) 71.43%,rgba(157,53,208, 0.5) 71.43%
+   , rgba(157,53,208, 0.5) 85.716%,rgba(156,30,204, 0.5) 85.716%,
+    rgba(156,30,204, 0.5) 100.002%),linear-gradient(207deg, 
+    rgb(218,24,222) 0%, rgb(218,24,222) 14.286%,rgb(192,28,195) 14.286%, 
+    rgb(192,28,195) 28.572%,rgba(187,29,167, 0.92) 28.572%,
+     rgba(187,29,167, 0.92) 42.858%,rgb(147,112,141) 42.858%, 
+     rgb(147,112,141) 57.144%,rgb(153, 146, 149) 57.144%, 
+     rgb(153, 146, 149) 71.43%,rgb(181,159,163) 71.43%, 
+     rgb(181,159,163) 85.716%,
+rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
+     background-repeat: no-repeat;
+}
+.navbar{
+    font-family: 'Playfair Display SC', serif;
+    justify-content: center;
+    align-content: center;
+    padding : 0;
+    margin: 0%;
+    font-weight: 700;
+    
+    
+}
+.navbar p {
+    color: seashell;
+  margin: 0em;
+}
+
+.navbar span{
+    font-size: 1.7rem;
+}
+
+.navbar-toggler {
+    padding: 0%;
+}
+.burger{
+    font-size: 2.5rem;
+    color: seashell;
+}
+.navbar-brand{
+    padding: 0%;
+    margin-right: 40px;
+}
+.navbar-brand img{
+    
+    text-align: center;
+    border-radius: 10px;
+    transform: translate(10%,10%);
+    }
+.nav-item{
+    font-family: 'PT Sans Narrow', sans-serif;
+
+font-weight: 800;
+    padding-left: 20%;
+}
+
+.form-inline {
+justify-content: center;
+    margin-bottom: 5vh;
+
+}
+.form-inline button{
+    background-color: whitesmoke;
+    font-weight: 700;
+
+}
+
+
+.nav-link {
+    margin-left: 1vw;
+    letter-spacing: 3px;   
+}
+
+.nav-item a{
+    color: snow;
+    font-weight: bold;
+     font-size: 25px;
+
+
+}
+
+.navbar-toggler{
+    font-size: 33px;
+    color: snow;
+    transform: translateX(-25px);
+} */
+
+/* search box  ___________________________________________ */
+
+#searchbox{
+    display: flex ;
+    justify-content: center;
+}
+
+.searchbtn{
+    background-color: snow;
+ 
+}
+.form-inline{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.latest{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly ;
+
+}
+.latest a {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+
+    
+}
+
+.latest img {
+    width: 360px;
+    height: 270px;
+}
+
+
+
+.desbox ,.desbox2   
+{   
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 20;
+    line-height: 3rem;
+}
+
+
+.desbox2  {
+    margin: 30px;
+    /* font-family: 'Oleo Script', cursive; */
+    
+}
+.featured{
+ align-content: center;
+    font-size: 40px;
+}
+@media only screen and (max-width: 1080px) {
+    .featured{
+ align-content: center;
+    font-size: 30px;
+}
+
+}
+
+
+.MOSTV{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: white;
+    text-align: center;
+    font-size:2rem;
+}
+.MOSTV span{
+    font-size:3rem;
+}
+
+.carousel-inner{
+    max-height: 300px;
+}
+
+.carousel{
+    max-width: 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 400px;
+    height: 300px;
+  }
+
+.hometitle{
+    text-align: center;
+    text-align: center;
+    height: 30px;
+    font-size:2rem;
+    font-weight: 500;
+
+}
+.hometitle p{
+    text-align: center;
+    text-align: center;
+    height: 60px;
+
+}
+.MOSTR{
+    color: snow;
+    text-align: center;
+    text-align: center;
+    font-size:2rem;
+}
+.MOSTR  {
+    font-size:3rem;
+}
+
+
+
+.mrcontainer p{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+
+.mrcontainer{
+   display: flex;
+    padding: 0;
+    margin-bottom: 5vh;
+}
+
+.mrcontainer img 
+{    border-radius: 25px;
+    border: 10px solid transparent;
+    width: 100vw;
+    max-width: 450px;
+    height: 60vw;
+    max-height: 300px;
+}
+
+
+
+.mritems{
+    margin: 0;
+   max-width: 550px;
+   text-align: center;
+
+}
+
+.mritems p{
+    margin: 0;
+   max-width: 500px;
+   text-align: center;
+
+}
+
+
+.vrbutton {
+    text-align: center;
+    
+}
+.vrbutton button{
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.sweet{
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+.pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40vh;
+}
+.current{
+  margin : 5px;
+  color: antiquewhite;
+  transform:  translateY(5px);
+
+}
+
+.pagebtn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pagebutton{
+  background-color: white;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color:#2e1437 ;
+}
+
+
+.icons{
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 3rem;
+}
+/* ________________________________________________MEDIA QUERY */
+@media only screen and (max-width: 1080px) {
+    .mrcontainer img 
+{    border-radius: 25px;
+    border: 10px solid transparent;
+    width: 100vw;
+    max-width: 400px;
+    height: 75vw;
+}
+    .col-sm-3 p{
+        font-size: 1rem;
+    }
+    .latest img {
+    width: 180px;
+    height: 135px;
+}
+
+    
+
+.sweet{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+}
+
+.containerlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+}
+.containerlist p {
+   color: white;
+   text-transform: capitalize;
+}
+.containerlist img {
+    max-width: 450px;
+    max-height: 300px;
+    min-width: 280px;
+    min-height: 210px;
+    height: 30vw;
+    width: 40vw;
+    margin: 5px;
+    border-radius: 20px;
+
+}
+.searchimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+.searchimg p {
+    color: white;
+    text-transform: capitalize;
+}
+.searchimg img{
+    min-height: 210px;
+    min-width: 280px;
+    max-height: 300px;
+    max-width: 450px;
+    width: 100vw;
+    border: 5px solid transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .mrcontainer img 
+{    border-radius: 25px;
+    border: 10px solid transparent;
+    width: 100vw;
+    max-width: 400px;
+    height: 75vw;
+}
+    .desbox ,.desbox2   
+{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 1px;
+
+}
+.latest img {
+    width: 180px;
+    height: 135px;
+}
+.carousel-inner p{
+    font-size: 1.5rem;
+}
+
+.jumbotron , .icons{
+    font-size: 110%;
+}
+.grid-container {
+  grid-template-columns: 1fr 1fr ;
+}
+.grid-container-list {
+  grid-template-columns: 1fr 1fr ;
+}
+.titledes{
+    font-size:1.2rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: 600;
+
+}
+
+}
+
+
+
+/* ___________________________________________________ */

@@ -1,0 +1,36 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="desbox">
+    <p>      All Posts -</p>
+</div>
+
+<div class="container containerlist">
+        {% for post in postlist reversed %}
+            <a href="detail/{{ post.id }}">
+                <img src="{{ post.image1.url }}" alt="">
+                  <p > {{ post.title }}</p>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+
+<div  class="pagebtn">   
+{% if is_paginated %}
+{% if page_obj.has_previous %}
+<button class=" pagebutton"> <a href="?page=1"> first page</a></button>
+<button class=" pagebutton"> <a href="?page={{page_obj.previous_page_number}}">previous page</a></button>
+<button class=" pagebutton"> {{ page_obj.number}}</button>
+{% endif %}
+
+{% if page_obj.has_next %}
+<button class=" pagebutton"> <a href="?page={{page_obj.next_page_number }}"> next page</a></button>
+{% endif %}
+{% endif %}
+
+
+</div>
+
+{% endblock %}

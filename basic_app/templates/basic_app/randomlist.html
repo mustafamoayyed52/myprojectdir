@@ -1,0 +1,20 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<div class="desbox">
+    <p>Chose from a random list of recipies </p>
+</div>
+<div class="searchimg">
+    {% for post in randomlist|slice:":10" %}
+            <a href="detail/{{ post.id }}">
+                <img src="{{ post.image1.url }}" alt="">
+                <p> {{ post.title }}</p>
+            </a>
+        {% endfor %}
+        </div>
+
+{% endblock %}

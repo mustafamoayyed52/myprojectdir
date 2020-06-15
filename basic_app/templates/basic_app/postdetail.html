@@ -1,0 +1,85 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'basic_app/css/postdetail.css' %}" type="text/css" />
+<br><br>
+
+<div class="postd">   
+    
+<div class="title">
+    <img src="{{ postdetail.image1.url}}" alt="">
+    <p class="title">
+        <u> {{ postdetail.title}} </u> </p>
+</div>
+
+    {{ postdetail.text_one|safe }}
+
+<div class="subtitle">
+    <img src="{{ postdetail.image2.url }}" alt="">
+    <img src="{{ postdetail.image3.url }}" alt="">
+</div>
+
+    {{ postdetail.text_two|safe }}
+ <br>
+<div class="subtitle">
+    <img src="{{ postdetail.image4.url }}" alt="">
+    <img src="{{ postdetail.image5.url }}" alt="">
+</div>
+
+{{ postdetail.text_three|safe }}
+
+<div class="subtitle">
+    <img src="{{ postdetail.image6.url }}" alt="">
+    <img src="{{ postdetail.image7.url }}" alt="">
+</div>
+
+{{ postdetail.ingredients_list|safe }} <br> 
+{{ postdetail.text_four|safe }}
+
+
+
+
+
+
+</div>
+
+
+<!-- 
+
+<br>
+
+<div class="container">
+
+
+
+
+<div class="image_grid1">
+
+    <img src="{{ postdetail.image4.url }}" alt="">
+    <img src="{{ postdetail.image5.url }}" alt="">
+</div>
+<br>
+<div class="text_three">
+    {{ postdetail.ingredients_list|safe }}
+</div> <br>
+<div class="image_grid1">
+
+    <img src="{{ postdetail.image6.url }}" alt="">
+    <img src="{{ postdetail.image7.url }}" alt="">
+</div> <br>
+<div class="text_four">
+    {{ postdetail.text_three|safe }}
+</div>
+<br>
+
+
+<br>
+<div class="text_five">
+    {{ postdetail.text_four|safe }}
+</div> -->
+
+
+
+
+
+{% endblock %}

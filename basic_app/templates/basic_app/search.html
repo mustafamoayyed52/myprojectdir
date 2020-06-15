@@ -1,0 +1,55 @@
+
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+
+
+{% if not page_obj  %}
+<div class=" jumbotron">
+    <br>
+    <br><p></p>
+    <p id=>
+        <p></p> Sorry there are no articles related to this search -</p>
+</div>
+{% endif %}
+  <div class="searchimg">
+
+{% for post in page_obj reversed %}
+<a href="detail/{{ post.id }}">
+    <img src="{{ post.image1.url }}" alt="">
+    <p> {{ post.title }}</p>
+</a>
+{% endfor %}
+
+  </div>
+       
+
+
+
+
+
+<div class="pagination">
+    
+        {% if page_obj.has_previous %}
+        <button class="pagebutton"> <a href="?page=1&q={{ query }}">&laquo; first</a> </button>
+        <button class="pagebutton"> <a href="?page={{ page_obj.previous_page_number }}&q={{ query }}">previous</a>
+          </button>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+        <button class="pagebutton"> <a href="?page={{ page_obj.next_page_number }}&q={{ query }} ">next</a> </button>
+        <button class="pagebutton"><a href="?page={{ page_obj.paginator.num_pages }}&q={{ query }}">last &raquo;</a> </button>
+       
+        {% endif %}
+       
+        </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="desbox">
+    <P class="featured"> <span>F</span>eatured <span>R</span>ecipies-</P>
+</div>
+    
+<div class="latest">
+    {% for post in posts|slice:":2"%}
+    <a href=" detail/{{ post.id }}"><img src="{{ post.image1.url }}" alt=""> 
+    <u><b> {{post.title}} </b></u></a>
+    {% endfor %}
+</div>
+
+<div class="desbox">
+     <P class="MOSTV"> <span>M</span>OST <span>V</span>IEWED-</P>
+ </div>
+<!-- 
+ carousel container___________________________________________________ -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+{% for post in posts|slice:":1"%}
+<a href=" detail/{{ post.id }}"><img src="{{ post.image1.url }}" alt="">
+
+</a>
+{% endfor %}
+</div>
+{% for post in posts|slice:"1:6"%}
+<div class="carousel-item">
+            <a href=" detail/{{ post.id }}"><img src="{{ post.image1.url }}" alt="">
+            </a>
+</div>
+{% endfor %}
+        
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<P class="MOSTR"> <span>M</span>OST <span>R</span>ECENT-</P>
+    <p class="sweet"> YOUR SWEET TOOTH PLACE-</p>
+
+<div class="container-fluid mrcontainer">
+    <div class="mostrecent">
+    <div class="d-flex flex-wrap">
+        {% for post in posts|slice:"3:5" %}
+        
+        <div class="mritems">
+            <a href=" detail/{{ post.id }}"><img src="{{ post.image1.url }}" alt=""></a>
+            <p> {{ post.summary|slice:":150" }}<a href=" detail/{{ post.id }}">View More</a></p>
+        </div>
+        
+        
+        {% endfor %}  
+     </div>
+      
+    </div>
+
+    
+   
+</div>
+
+<p class="vrbutton"> 
+<a  href=" {% url 'basic_app:recipies' %}"><button> View All Recipies </button></a>
+  </p>
+
+
+
+<div class="desbox">
+    <P class="hometitle"> <span>C</span>HERRY <span>O</span>N <span>T</span>OP-</P>
+    <p class="titledes">
+        Metaphorically means that something special is added to something else that is also very nice to make it just
+        much more
+        enriched.
+        Hi! I'm Sakina.To begin with my story of starting to bake is not out of the way very different but it has to
+        eventually
+        begin with my MOM!
+        Growing up she would get cake boxes to be particular BETTY CROCKER and I would love eating them seeing her I too
+        started
+        baking. Well Well ended up burning the bottom of the cake and that's why let me tell you there is one thing that
+        baking
+        for sure teaches you is getting used to burns!!
+        Looking at youtube videos and TV channels I became so obsessed about baking that my mom was tired of me but you
+        see it
+        was not my fault but my mom's.
+
+    </p>
+
+    <p class="titledes">
+        Thats alot of reading so lets come to the main point.
+        This website basically includes all of my own tried and tested recipes that I am sure you are 100% going to love
+        !!
+        So guys this is
+        "CHERRY ON TOP"
+    </p>
+
+
+    
+</div>
+
+
+{% endblock %}
