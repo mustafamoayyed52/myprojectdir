@@ -26,6 +26,7 @@ class Post(models.Model):
     ingredients = models.ManyToManyField(Ingredients)
     text_four = models.TextField()
     summary = models.TextField()
+    video = models.FileField(upload_to='videos/')
 
     def __str__(self):
        return self.title
