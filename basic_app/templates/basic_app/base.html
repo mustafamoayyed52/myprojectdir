@@ -21,7 +21,7 @@
     <title>CherryOnTopBakery</title>
 </head>
 <body>
-<nav class="navbar  navbar-expand-md justify-content-center  navbar-light">
+<nav class="navbar  navbar-expand-md  justify-content-center  navbar-light">
     <!-- Brand -->
      <a class="navbar-brand" href="{% url 'basic_app:home' %}"><img src="{% static 'basic_app/images/logoimgg.jpeg' %}" height="80" alt=""><p> <span>C</span>herry<span>O</span>n<span>T</span>op</p>
      </a>
@@ -34,26 +34,26 @@
 
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'basic_app:ingredients' %}">Ingredients</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'basic_app:contact' %}">Contact</a>
+                <a class="nav-link active" href="{% url 'basic_app:ingredients' %}">Ingredients</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'basic_app:randomlist' %}">Explore</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'basic_app:contact' %}">Contact</a>
+            </li>
+            
         </ul>
     </div>
  
 </nav>
-<nav class="navbar navbar-expand-sm " id="searchbox">
     <form class="form-inline" method="GET" action="/search">
         <input class="form-control mr-sm-2" name="q" value="{{ request.GET.q }}" placeholder="Search__">
         <button class="btn searchbtn " type="submit">Search</button>
     </form>
-</nav>
+
 
     {% block content %}
     {% endblock %}
