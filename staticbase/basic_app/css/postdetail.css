@@ -58,6 +58,7 @@ rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
 }
 .subtitle{
   text-align: center;
+align-items: center;
 }
 .subtitle img{
    width: 75vw;
@@ -65,9 +66,12 @@ rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
   max-height: 300px;
   margin-bottom: 15px;
 }
-.subtitle video {
+.videofile {
   width: 100vw;
-  max-width: 500px;
+  max-width: 800px;
+  margin-bottom: 15px;
+  text-align: center;
+
 
 }
 

@@ -24,7 +24,10 @@
 <div class="subtitle">
     <img src="{{ postdetail.image4.url }}" alt="">
     <img src="{{ postdetail.image5.url }}" alt="">
-    <video src="{{ postdetail.video.url }}" controls autoplay></video>
+</div>
+<div>
+    <video class="videofile" src="{{ postdetail.video.url }}" controls autoplay></video>
+
 </div>
 
 {{ postdetail.text_three|safe }}
