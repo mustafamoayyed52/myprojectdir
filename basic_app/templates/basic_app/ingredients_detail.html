@@ -5,6 +5,29 @@
 
 
 
+
+<div class="desbox">
+    <p class="ingtitle"> {{ingredients.title}}- is the ingredient </p>
+</div>
+
+{% if not page_obj  %}
+<div class=" jumbotron">
+
+    <p> Sorry there are no articles related to this Ingredient -{{ingredients.title}} </p>
+</div>
+{% endif %}
+<br>
+<br>
+<div class="container containerlist">
+    {% for post in posts reversed %}
+    <a href="{%url 'basic_app:home' %}detail/{{ post.id }}">
+        <img src="{{ post.image1.url }}" alt="">
+        <p> {{ post.title }}</p>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- 
 <p class="ingtitle">  {{ingredients.title}}- is the ingredient   </p>
 <div class="container">
     <div class="grid-container-list">
@@ -21,6 +44,6 @@
 
 </div>
 
-
+ -->
 
 {% endblock %}

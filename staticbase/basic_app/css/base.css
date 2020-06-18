@@ -132,6 +132,8 @@ font-style: oblique;
 
 .desbox ,.desbox2   
 {   
+    background-color: rgba(19, 18, 18, 0.5);
+
     margin: 0px;
     text-align: center;
     color: white;
@@ -139,10 +141,13 @@ font-style: oblique;
     font-weight: 20;
     line-height: 3rem;
 }
+.desbox p{
+    font-size: 2rem;
+    line-height: 100%;
 
+}
 
 .desbox2  {
-    background-color: rgba(19, 18, 18, 0.5);
     line-height: 100%;
     padding-top: 30px;
     padding-bottom: 10vh;
