@@ -3,26 +3,14 @@
   list-style: none;
   
 }
+img{
+  border: 5px solid whitesmoke;
+}
 body{
-  margin-bottom: 10vh;
-      height: 100%;    
-      background-image: linear-gradient(150deg, rgba(158,99,225, 0.5) 0%,
- rgba(158,99,225, 0.5) 14.286%,rgba(156,93,222, 0.5) 14.286%,
-  rgba(156,93,222, 0.5) 28.572%,rgba(142,87,218, 0.5) 28.572%,
-   rgba(142,87,218, 0.5) 42.858%,rgba(166,81,215, 0.5) 42.858%, 
-   rgba(166,81,215, 0.5) 57.144%,rgba(163,74,211, 0.5) 57.144%, 
-   rgba(163,74,211, 0.5) 71.43%,rgba(157,53,208, 0.5) 71.43%
-   , rgba(157,53,208, 0.5) 85.716%,rgba(156,30,204, 0.5) 85.716%,
-    rgba(156,30,204, 0.5) 100.002%),linear-gradient(207deg, 
-    rgb(218,24,222) 0%, rgb(218,24,222) 14.286%,rgb(192,28,195) 14.286%, 
-    rgb(192,28,195) 28.572%,rgba(187,29,167, 0.92) 28.572%,
-     rgba(187,29,167, 0.92) 42.858%,rgb(147,112,141) 42.858%, 
-     rgb(147,112,141) 57.144%,rgb(153, 146, 149) 57.144%, 
-     rgb(153, 146, 149) 71.43%,rgb(181,159,163) 71.43%, 
-     rgb(181,159,163) 85.716%,
-rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
-   background-repeat: no-repeat;
-  height: 100%;
+  overflow-x: hidden;
+width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -34,11 +22,18 @@ rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
   margin: 0;
 }
 
-.title p {
-  text-align: center;
+.content {
+  line-height: 120%;
+  font-weight: 600;
+  background-color: rgba(56, 56, 56, 0.457);
+}
+
+.titletext {
+  
   text-transform: capitalize;
-  color: white;
-  font-size: 25px;
+  color: black;
+  font-size:2rem;
+  font-weight: 500;
 
   
   
@@ -55,6 +50,10 @@ rgb(165,215,215) 85.716%, rgb(165,215,215) 100.002%);
   text-align: center;
   color: aliceblue;
   text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.postd p{
+
 }
 .subtitle{
   text-align: center;
@@ -88,6 +87,8 @@ align-items: center;
 
 .contact{
   margin-left: 20vw;
+  background-color: rgba(253, 253, 253, 0.457);
+
   margin-top: 20vh;
   /* margin-bottom: 50vh; */
   text-transform : capitalize ;
@@ -96,6 +97,7 @@ align-items: center;
 }
 
 .contactbox{
+  background-color: rgba(253, 253, 253, 0.457);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -108,7 +110,7 @@ align-items: center;
 }
 
 .contactbox > a {
- color: aliceblue;
+ color: black;
  
 }
 
@@ -132,15 +134,21 @@ align-items: center;
   
 }
 .linkbox {
+  background-color: rgba(56, 56, 56, 0.457);
+
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 30vh;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr  ;
 }
 
 .linkbox a{
+  padding: 10px;
+  overflow: hidden;
+  line-height: 150%;
+  max-width: 50vw;
   margin-top: 20px;
-  font-size: 3vw;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-align: center;

@@ -8,81 +8,73 @@
     
 <div class="title">
     <img src="{{ postdetail.image1.url}}" alt="">
-    <p class="title">
+    <p class="titletext">
         <u> {{ postdetail.title}} </u> </p>
 </div>
+<br>
 
+    <div class="content" > 
     {{ postdetail.text_one|safe }}
+    </div>
+<br>
 
 <div class="subtitle">
     <img src="{{ postdetail.image2.url }}" alt="">
     <img src="{{ postdetail.image3.url }}" alt="">
 </div>
+<br>
 
+
+<div class="content">
     {{ postdetail.text_two|safe }}
+</div> 
+<br>
+
+
  <br>
 <div class="subtitle">
     <img src="{{ postdetail.image4.url }}" alt="">
     <img src="{{ postdetail.image5.url }}" alt="">
 </div>
+<br>
+
 <div>
-    <video class="videofile"width="400" height="300" src="{{ postdetail.video.url }}" controls autoplay  ></video>
+    <video class="videofile"width="40   0" height="300" src="{{ postdetail.video.url }}" controls autoplay  ></video>
 
 </div>
-
-{{ postdetail.text_three|safe }}
-
-<div class="subtitle">
-    <img src="{{ postdetail.image6.url }}" alt="">
-    <img src="{{ postdetail.image7.url }}" alt="">
-</div>
-
-{{ postdetail.ingredients_list|safe }} <br> 
-{{ postdetail.text_four|safe }}
-
-
-
-
-
-
-</div>
-
-
-<!-- 
-
 <br>
 
-<div class="container">
 
-
-
-
-<div class="image_grid1">
-
-    <img src="{{ postdetail.image4.url }}" alt="">
-    <img src="{{ postdetail.image5.url }}" alt="">
-</div>
-<br>
-<div class="text_three">
-    {{ postdetail.ingredients_list|safe }}
-</div> <br>
-<div class="image_grid1">
-
-    <img src="{{ postdetail.image6.url }}" alt="">
-    <img src="{{ postdetail.image7.url }}" alt="">
-</div> <br>
-<div class="text_four">
+<div class="content">
     {{ postdetail.text_three|safe }}
 </div>
 <br>
 
 
+<div class="subtitle">
+    <img src="{{ postdetail.image6.url }}" alt="">
+    <img src="{{ postdetail.image7.url }}" alt="">
+</div>
 <br>
-<div class="text_five">
+
+<div class="content">
+{{ postdetail.ingredients_list|safe }}
+</div>
+<br>
+
+<div class="content">
     {{ postdetail.text_four|safe }}
-</div> -->
+
+</div>
 
 
+ <br> 
+
+
+
+
+
+</div>
 
 
 
