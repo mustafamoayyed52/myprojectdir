@@ -6,25 +6,23 @@ img{
   border: 5px solid whitesmoke;
 }
 body{
- 
-    background-size: cover;
-    background-clip: border-box;
-    background-position: 20%;
-    background-repeat: no-repeat;
-
+ background-image: linear-gradient(to right , rgba(195, 55, 99, 0.7) , rgba(27, 39, 150, 2),
+  rgba(195, 55, 99, 2) , rgba(29, 37, 113, 0.7)
+ );
+  
 }
 
 .navbar{
     font-family: 'Playfair Display SC', serif;
     padding : 0;
     margin: 0%;
-    background-color: rgba(245, 245, 245,1);
+    background-color: rgba(255, 255, 255, 0.4);
     font-weight: 700;
     
     
 }
 .navbar p {
-    color: black;
+    color: white;
     margin: 0em;
 }
 
@@ -36,8 +34,8 @@ body{
     padding: 0%;
 }
 .burger{
-    font-size: 2.5rem;
-    color: black;
+    font-size: 3rem;
+    
 }
 .navbar-brand{
     padding: 0%;
@@ -73,7 +71,7 @@ justify-content: center;
 }
 
 .nav-item a{
-    color: black;
+    color: white;
 font-style: oblique;
     font-weight: 900;
      font-size: 25px;
@@ -132,7 +130,6 @@ font-style: oblique;
 
 .desbox ,.desbox2   
 {   
-    background-color: rgba(19, 18, 18, 0.5);
 
     margin: 0px;
     text-align: center;
@@ -155,11 +152,10 @@ font-style: oblique;
     
 }
 .featured {
-    background-color: rgba(245, 245, 245, 0.5);
 
  align-content: center;
  line-height: 100%;
- color: black;
+ color: whitesmoke;
  font-weight: 600;
  font-size: 3rem;
  
@@ -173,9 +169,8 @@ font-style: oblique;
 
 
 .MOSTV{
-    background-color: rgba(245, 245, 245, 0.5);
     line-height: 100%;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: 700;
     font-size:2rem;
@@ -214,9 +209,8 @@ font-style: oblique;
 
 }
 .MOSTR{
-    background-color: rgba(245, 245, 245, 0.5);
     font-weight: 700;
-    color: black;
+    color: white;
     text-align: center;
     text-align: center;
     font-size:2rem;
@@ -261,7 +255,6 @@ font-style: oblique;
 }
 
 .mritems p{
-    background-color: rgba(19, 18, 18, 0.5);
 
     margin: 0;
    max-width: 500px;
@@ -280,11 +273,10 @@ font-style: oblique;
 }
 
 .sweet{
-    background-color: rgba(245, 245, 245, 0.5);
     line-height: 100%;
     font-weight: 700;
     font-size: 2rem;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -378,7 +370,6 @@ font-style: oblique;
 
 }
 .searchimg p {
-    background-color: rgba(19, 18, 18, 0.5);
     color: white;
     font-size: 1.5rem;
     text-transform: capitalize;

@@ -44,9 +44,6 @@ class contact(TemplateView):
      template_name = 'basic_app/contact.html'
      
 
-# class about(TemplateView):
-#      template_name = 'basic_app/about.html'
-
 
 
 

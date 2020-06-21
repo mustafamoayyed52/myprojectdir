@@ -87,17 +87,14 @@ align-items: center;
 
 .contact{
   margin-left: 20vw;
-  background-color: rgba(253, 253, 253, 0.457);
-
   margin-top: 20vh;
-  /* margin-bottom: 50vh; */
   text-transform : capitalize ;
-  letter-spacing: 5px;
+  font-size: 3rem;
+  color: white;
 
 }
 
 .contactbox{
-  background-color: rgba(253, 253, 253, 0.457);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -110,7 +107,7 @@ align-items: center;
 }
 
 .contactbox > a {
- color: black;
+ color: whitesmoke;
  
 }
 
