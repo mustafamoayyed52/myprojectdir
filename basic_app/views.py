@@ -12,7 +12,7 @@ class home(ListView):
     model = Post
    
     def get_queryset(self):
-        return Post.objects.reverse()[:6]
+        return Post.objects.order_by('-id')[:6]
        
     
 class postlist(ListView):
